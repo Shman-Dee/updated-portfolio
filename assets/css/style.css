@@ -1,0 +1,148 @@
+* {
+  margin: 0.2em;
+}
+/* spelling and grammer do not count in personal comments 🤓🤓 */
+body {
+  line-height: 1.3;
+  background-color: #e3e3eb;
+}
+/* header flex box */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: wrap;
+  padding: 1%;
+  background-color: skyblue;
+  color: greenyellow;
+}
+/* i tried to use lots of percentage sizes to help with resposiveness */
+h1 {
+  font-size: 200%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  font-size: 150%;
+}
+
+nav a {
+  color: greenyellow;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  margin: 2% auto;
+}
+.project-titles {
+  font-size: 200%;
+}
+/* flex box */
+.about-me {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: row;
+}
+/* Recent photo from wedding */
+.bolo {
+  justify-content: flex-start;
+  max-width: 14em;
+  left: 0px;
+  border: skyblue solid 5px;
+}
+/* boarding styling of the future! */
+.about-me p,
+.myWork p {
+  font-size: 1.5em;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  border-left: skyblue solid 5px;
+  border-top: skyblue solid 5px;
+  margin-top: 0.15em;
+}
+/* Fancy writing mode */
+.about-me p:last-child {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+/* flex box for projects */
+.myWork {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+/* added border radius to make a circular image */
+.bigBox {
+  width: 75%;
+  height: auto;
+  left: 0px;
+  border: skyblue solid 5px;
+}
+/* verticle writing is about as creative as I get */
+.myWork p:last-child {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 3em;
+}
+
+.smallBox ul li {
+  display: flex;
+  font-size: 1.5em;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  border-top: skyblue solid 5px;
+  margin-top: 0.15em;
+}
+
+.smallBox li {
+  padding: 4em;
+  margin: 2em;
+}
+/* adjusting sizes to image based on screen size */
+.project1,
+.project2,
+.project3 {
+  width: 50%;
+  height: auto;
+}
+/* footer flex box */
+footer {
+  display: flex;
+  padding: 1%;
+  align-items: center;
+  flex-flow: wrap;
+  background-color: peru;
+  color: rgb(22, 119, 209);
+  justify-content: space-between;
+  min-width: 600px;
+}
+
+footer section {
+  font-size: 200%;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  min-width: 600px;
+  font-size: 100%;
+}
+/* omited default nav color links */
+footer a {
+  margin-right: 2em;
+  color: rgb(22, 119, 209);
+}
+
+@media screen and (max-width: 768px) {
+  /* move selfie above about me paragraph */
+  .about-me {
+    flex-flow: wrap;
+  }
+}
